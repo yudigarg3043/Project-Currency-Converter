@@ -298,7 +298,13 @@ span
             </div>
             <nav>
                 <ul id='MenuItems'>
-                    <li onclick="alert('Already on Home page')"><a>Home</a></li>
+                    <div class="dropdown-menu">
+                        <li><button class="menu-btn">Services</button></li>
+                            <div class="menu-content">
+                               <a class="links-hidden" href="index.html">Currency Converter</a>
+                               <a class="links-hidden" href="CryptoCurrency.html"> Crypto Currency Converter</a> 
+                            </div>
+                    </div>    
                     <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
                     <li><a href="Contact Us.html">Contact</a></li>
                     <li><a href="Feedback Page.html">Feedback</a></li>
@@ -308,11 +314,12 @@ span
         <div class="banner-area">
             <h2>Currency Converter</h2>
             <p>Do Your Currency Conversions for Free</p>
-            <button class="btn-donate">Fiat-Currency Converter
-                <a href="index.html"></a>
+            <p>Our services:</p>
+            <button class="btn-donate">
+                <a href="index.html" style="color: rgb(193, 163, 98);">Fiat-Currency Converter</a>
             </button>
-            <button class="btn-donate">Crypto-Currency Converter
-                <a href="CryptoCurrency.html"></a>
+            <button class="btn-donate">
+                <a href="CryptoCurrency.html" style="color:rgb(193, 163, 98);">Crypto-Currency Converter</a>
             </button>
         </div>
     </div>
